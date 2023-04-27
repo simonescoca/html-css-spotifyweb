@@ -350,3 +350,48 @@ footer section{
 .buttons-left img{
     width: 50%;
 }
+
+/* FOOTER - section.center */
+.center{
+    justify-content: center;
+}
+
+.buttons-center{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 1.2rem;
+}
+
+.buttons-center img{
+    width: 6%;
+}
+
+.buttons-center .play{
+    width: 7%;
+}
+
+.timebarBox{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time{
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.timebar{
+    height: 5px;
+    width: 60%;
+    background-color: #797c80;
+    border-radius: 10px;
+}
+
+.timeProgress{
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+}
