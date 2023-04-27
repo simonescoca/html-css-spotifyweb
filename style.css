@@ -307,10 +307,6 @@ footer{
     justify-content: space-between;
 }
 
-footer section{
-    background-color: magenta;
-}
-
 .left,
 .right{
     width: 250px;
@@ -392,6 +388,30 @@ footer section{
 .timeProgress{
     height: 100%;
     width: 20%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* FOOTER - section.right */
+.right{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right img{
+    width: 7%;
+}
+
+.volumebar{
+    height: 4px;
+    width: 50%;
+    background-color: #797c80;
+    border-radius: 10px;
+}
+
+.volumeNow{
+    height: 100%;
+    width: 40%;
     background-color: white;
     border-radius: 10px;
 }
