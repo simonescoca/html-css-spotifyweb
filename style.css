@@ -343,8 +343,17 @@ footer{
     font-weight: 600;
 }
 
+.buttons-left{
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons-left a{
+    width: 25%;
+}
+
 .buttons-left img{
-    width: 50%;
+    width: 100%;
 }
 
 /* FOOTER - section.center */
@@ -355,16 +364,21 @@ footer{
 .buttons-center{
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     padding-bottom: 1.2rem;
+    text-align: center;
 }
 
-.buttons-center img{
+.buttons-center a{
     width: 6%;
 }
 
 .buttons-center .play{
-    width: 7%;
+    width: 8%;
+}
+
+.buttons-center img{
+    width: 100%;
 }
 
 .timebarBox{
@@ -390,6 +404,28 @@ footer{
     width: 20%;
     background-color: white;
     border-radius: 10px;
+    position: relative;
+}
+
+.timebar:hover .timeProgress{
+    background-color: #adff30;
+}
+
+.timebar:hover .slider1{
+    display: inline;
+}
+
+.slider1,
+.slider2{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #797c80;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    display: none;
 }
 
 /* FOOTER - section.right */
@@ -398,8 +434,12 @@ footer{
     align-items: center;
 }
 
-.right img{
+.right a{
     width: 7%;
+}
+
+.right img{
+    width: 100%;
 }
 
 .volumebar{
@@ -414,4 +454,13 @@ footer{
     width: 40%;
     background-color: white;
     border-radius: 10px;
+    position: relative;
+}
+
+.volumebar:hover .volumeNow{
+    background-color: #adff30;
+}
+
+.volumebar:hover .slider2{
+    display: inline;
 }
