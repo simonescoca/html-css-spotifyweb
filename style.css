@@ -116,7 +116,7 @@ nav li{
 }
 
 .navbarContainer{
-    padding: 5%;
+    padding: 20px;
     /*  Questo container va dato alla "nav" e non cambia mai */
 }
 
@@ -135,6 +135,92 @@ nav{
     width: 200px;
     height: calc(100vh - 110px);
     background-color: #000000;
+    justify-content: space-between;
+}
+
+nav a:hover img{
+    filter: grayscale(100%) brightness(100%);
+}
+
+/* NAVBAR Top item*/
+.logo,
+nav ul:first-of-type{
+    padding-bottom: 1.5rem;
+}
+
+.logo img{
+    width: 75%;
+}
+
+.greenLine{
+    position: relative;
+}
+
+.greenLine::before{
+    content: '';
+    height: 70%;
+    width: 2px;
+    background-color: #adff30;
+    position: absolute;
+    left: -20px;
+}
+
+.home{
+    color: white;
+}
+
+.home img,
+.search img,
+.library img{
+    width: 15%;
+    vertical-align: bottom;
+}
+
+nav li:not(li:last-child){
+    padding-bottom: 0.8rem;
+}
+
+.playlist{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.create-playlist img{
+    width: 25%;
+    vertical-align: middle;
+}
+
+/* NAVBAR Bottom item*/
+.bottom-item a{
+    align-items: center;
+}
+
+.download{
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.download img{
+    height: 20px;
+    padding-right: 5px;
+}
+
+.download .app{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.profile img{
+    height: 40px;
+    padding-right: 8px;
+}
+
+.profile .userName{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
 }
 
 /* MAIN */
