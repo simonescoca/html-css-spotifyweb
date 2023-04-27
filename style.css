@@ -304,4 +304,49 @@ footer{
     width: 100%;
     height: 110px;
     background-color: #282828;
+    justify-content: space-between;
+}
+
+footer section{
+    background-color: magenta;
+}
+
+.left,
+.right{
+    width: 250px;
+}
+
+.center{
+    width: 500px;
+}
+
+/* FOOTER - section.left */
+.left{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Album-cover{
+    width: 30%;
+}
+
+.Titles{
+    justify-content: center;
+    padding-left: 0.7rem;
+}
+
+.Album{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.track{
+    color: #797c80;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.buttons-left img{
+    width: 50%;
 }
