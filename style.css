@@ -483,20 +483,20 @@ footer{
     }    
 }
 
+@media screen and (max-width: 768px) {
+    .card{
+        width: calc((100vw - 200px - 0.04 * (100vw - 200px)) / 2);
+    }
 
-/* .card{
-    width: calc((100vw - 200px - 0.2 * (100vw - 200px)) / 6);
+    .album-img{
+        height: calc((100vw - 200px - 0.04 * (100vw - 200px)) / 2 - 20px);
+    }
+
+    .buttons-left{
+        flex-direction: column;
+    }
+
+    .buttons-left a{
+        width: 45%;
+    }
 }
-
-.album-img{
-    height: calc((100vw - 200px - 0.2 * (100vw - 200px)) / 6 - 20px);
-} */
-
-
-/* .containerLarge{
-    padding: 30px 10%;
-}
-
-.containerMedium{
-    padding: 30px 4%;
-} */
