@@ -124,6 +124,11 @@ nav li{
     /*  Questo container va dato alla "nav" e non cambia mai */
 }
 
+.smallNavbarContainer{
+    padding: 5px;
+    /*  Questo container va dato alla "SmallNav" e non cambia mai */
+}
+
 .footerContainer{
     padding: 0 10px;
     /*  Questo container va dato al "footer" e non cambia mai */
@@ -225,6 +230,41 @@ nav li:not(li:last-child){
     font-size: 1rem;
     font-weight: 700;
     color: white;
+}
+
+/* NAVBAR X-S Media Query*/
+.SmallNav{
+    width: 50px;
+    display: none;
+}
+
+.SmallNav a{
+    display: block;
+}
+
+.Small-top-item,
+.Small-bottom-item{
+    align-items: center;
+}
+
+.Small-top-item li{
+    width: 70%;
+}
+
+li.logoSmall{
+    width: 90%;
+}
+
+.Small-download{
+    width: 50%;
+}
+
+.Small-profile{
+    width: 100%;
+}
+
+.Small-profile img{
+    width: 100%;
 }
 
 /* MAIN */
@@ -483,6 +523,7 @@ footer{
     }    
 }
 
+
 @media screen and (max-width: 768px) {
     .card{
         width: calc((100vw - 200px - 0.04 * (100vw - 200px)) / 2);
@@ -498,5 +539,33 @@ footer{
 
     .buttons-left a{
         width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .BigNav{
+        display: none;
+    }
+
+    .SmallNav{
+        display: flex;
+    }
+
+    .download{
+        border-bottom: none;
+        margin-bottom: 16px;
+    }
+
+    main{
+        width: calc(100% - 50px);
+    }
+
+    .card{
+        width: calc((100vw - 50px - 0.04 * (100vw - 50px)) / 2);
+    }
+
+    .album-img{
+        height: calc((100vw - 50px - 0.04 * (100vw - 50px)) / 2 - 20px);
     }
 }
